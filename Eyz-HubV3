@@ -1,5 +1,5 @@
 -- ═══════════════════════════════════════════════════════════════
--- EYZHUB V3 - PINK PREMIUM EDITION
+-- EYZHUB V3 - PINK PREMIUM EDITION (THIN TEXT)
 -- Made by TTTSkorpion
 -- ═══════════════════════════════════════════════════════════════
 
@@ -37,7 +37,7 @@ ScreenGui.Parent = LocalPlayer:WaitForChild("PlayerGui")
 
 local MainFrame = Instance.new("Frame")
 MainFrame.Name = "MainFrame"
-MainFrame.Size = UDim2.new(0, 420, 0, 500) -- Breiteres und höheres GUI
+MainFrame.Size = UDim2.new(0, 420, 0, 500)
 MainFrame.Position = UDim2.new(0.5, -210, 0.5, -250)
 MainFrame.BackgroundColor3 = Color3.fromRGB(244, 98, 160) 
 MainFrame.BorderSizePixel = 0
@@ -79,7 +79,7 @@ CreditsLabel.Position = UDim2.new(0, 0, 0.6, -2)
 CreditsLabel.BackgroundTransparency = 1
 CreditsLabel.Text = "★ Made by TTTSkorpion ★"
 CreditsLabel.TextColor3 = Color3.fromRGB(255, 235, 133) 
-CreditsLabel.Font = Enum.Font.GothamBold -- Premium Schrift
+CreditsLabel.Font = Enum.Font.GothamBold -- Bleibt exakt wie gewünscht fett
 CreditsLabel.TextSize = 12
 CreditsLabel.Parent = TitleBar
 
@@ -89,7 +89,7 @@ TitleLabel.Position = UDim2.new(0, 0, 0, 5)
 TitleLabel.BackgroundTransparency = 1
 TitleLabel.Text = "🎀 EyzHub V3 🎀"
 TitleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TitleLabel.Font = Enum.Font.FredokaOne -- Dicke, stylische Schrift
+TitleLabel.Font = Enum.Font.Gotham -- Dünne, normale Schrift
 TitleLabel.TextSize = 22
 TitleLabel.Parent = TitleBar
 
@@ -121,7 +121,7 @@ local function Notify(text)
     NotifyGui.BorderSizePixel = 0
     NotifyGui.Text = "💕 " .. text
     NotifyGui.TextColor3 = Color3.fromRGB(255, 255, 255)
-    NotifyGui.Font = Enum.Font.GothamBold
+    NotifyGui.Font = Enum.Font.Gotham -- Normale Schrift
     NotifyGui.TextSize = 14
     NotifyGui.ZIndex = 100
     NotifyGui.Parent = ScreenGui
@@ -151,7 +151,7 @@ local function CreateSection(name, layoutOrder)
     SectionLabel.BackgroundTransparency = 1
     SectionLabel.Text = "★ " .. name .. " ★"
     SectionLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-    SectionLabel.Font = Enum.Font.GothamBlack
+    SectionLabel.Font = Enum.Font.Gotham -- Dünne Schrift
     SectionLabel.TextSize = 14
     SectionLabel.Parent = Section
     return Section
@@ -163,7 +163,7 @@ local function CreateButton(text, layoutOrder, callback)
     Button.BackgroundColor3 = Color3.fromRGB(255, 140, 190)
     Button.Text = text
     Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Button.Font = Enum.Font.GothamBold
+    Button.Font = Enum.Font.Gotham -- Dünne Schrift
     Button.TextSize = 15
     Button.LayoutOrder = layoutOrder
     Button.AutoButtonColor = true
@@ -233,7 +233,7 @@ local function CreateSaveEntry(index)
     Label.BackgroundTransparency = 1
     Label.Text = "Position " .. index
     Label.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Label.Font = Enum.Font.GothamBold
+    Label.Font = Enum.Font.Gotham
     Label.TextSize = 14
     Label.TextXAlignment = Enum.TextXAlignment.Left
     Label.Parent = Entry
@@ -243,8 +243,8 @@ local function CreateSaveEntry(index)
     TpBtn.Position = UDim2.new(1, -145, 0.5, -13)
     TpBtn.BackgroundColor3 = Color3.fromRGB(255, 235, 133)
     TpBtn.Text = "FLY"
-    TpBtn.TextColor3 = Color3.fromRGB(219, 63, 129)
-    TpBtn.Font = Enum.Font.GothamBold
+    TpBtn.TextColor3 = Color3.fromRGB(50, 50, 50) -- Grau/Schwarz statt Pink
+    TpBtn.Font = Enum.Font.Gotham
     TpBtn.TextSize = 12
     TpBtn.Parent = Entry
     Instance.new("UICorner", TpBtn).CornerRadius = UDim.new(0, 8)
@@ -255,7 +255,7 @@ local function CreateSaveEntry(index)
     DelBtn.BackgroundColor3 = Color3.fromRGB(219, 63, 129)
     DelBtn.Text = "REMOVE"
     DelBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-    DelBtn.Font = Enum.Font.GothamBold
+    DelBtn.Font = Enum.Font.Gotham
     DelBtn.TextSize = 11
     DelBtn.Parent = Entry
     Instance.new("UICorner", DelBtn).CornerRadius = UDim.new(0, 8)
@@ -286,7 +286,7 @@ local function CreatePlayerDropdown(parent, layoutOrder)
     DBtn.BackgroundColor3 = Color3.fromRGB(255, 140, 190)
     DBtn.Text = "▼ Select Player..."
     DBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
-    DBtn.Font = Enum.Font.GothamBold
+    DBtn.Font = Enum.Font.Gotham
     DBtn.TextSize = 15
     DBtn.Parent = Container
     Instance.new("UICorner", DBtn).CornerRadius = UDim.new(0, 12)
@@ -320,7 +320,7 @@ local function CreatePlayerDropdown(parent, layoutOrder)
                     pb.BackgroundColor3 = Color3.fromRGB(255, 140, 190)
                     pb.Text = p.Name
                     pb.TextColor3 = Color3.fromRGB(255, 255, 255)
-                    pb.Font = Enum.Font.GothamBold
+                    pb.Font = Enum.Font.Gotham
                     pb.TextSize = 13
                     pb.ZIndex = 11
                     pb.Parent = DList
